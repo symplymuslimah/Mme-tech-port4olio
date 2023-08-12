@@ -1,0 +1,242 @@
+* {
+    margin: 0;padding: 0; box-sizing: border-box; font-family: sans-serif;
+}
+/* LANDING PAGE SECTION */
+body {
+    background-color: #101010;
+}
+.hero { width:100%;
+    height:100vh;
+ background-image: url(get.jpg); background-position:center;
+ background-size: cover;
+} 
+
+header {
+    display:flex; align-items: center; justify-content: space-between;
+    padding:20px;
+}
+.logo {
+    color:white; letter-spacing:2px; font-weight:bold; font-size:1.7rem;
+    margin-left:20px;
+}
+.logo span {
+    color: #e645dd;
+}
+.icon-nav{
+    display: none;
+}
+nav ul li {display:inline-block;
+    list-style-type:none;}
+    nav ul li a {
+        text-decoration:none; color: white; padding:20px 20px;
+    }
+    nav ul li a:hover {
+       background-color:#e645dd;  border-radius:30px; padding:10px 10px;
+        transition: .5s;
+    }
+    .btn {
+        background-color: #e645dd; color: white; font-weight:bold; font-size:1rem;
+        border-radius: 30px; padding: 15px 15px;  margin-right:3rem; transition: .4s;
+        border: transparent;
+    }
+    .btn:hover {
+        transform: scale(1.2);
+    }
+
+  /*LANDING PAGE CONTENT PART */
+   .content {
+       color:white; position: absolute;
+       top: 48%; left:7%; transform: translateY(-50%);
+   }
+   .content h4  { letter-spacing:3px; color: whitesmoke;
+
+   }
+   .content h1 {   margin:18px 0px; font-size:65px; font-weight:400;
+   }
+   .content h1 span { color:#e645dd; }
+   .content h3 {
+       font-size:20px; color: white; 
+       margin-bottom:45px;
+   }
+   /*  inpuut section */
+   .input form {
+       position: relative;
+   }
+   .input form input:first-child {
+       width:75%; border:1px solid #e645dd; border-radius:20px; padding:10px;
+   }
+   .input form input:last-child { border:none;
+    background-color: #e645dd; color: white; border-radius:30px;
+    box-shadow: 0px 0px 5px,0px 0px 5px;
+   /* padding:10px 20px 8px 20px; */ padding: 8px;  position: absolute; right:110px; top:2px;
+
+   }
+   /* ABOUT ME SECTION */
+   .about {
+       background-color:#191919; color: white; /* padding:100px 0px; */
+   }
+   .minabout {
+       display:flex; align-items: center; justify-content:center;
+     /*  margin:0px 50px 0px 30px; */ margin: 0.3rem;
+   }
+   .minabout img {
+    width:250px; height:63vh; 
+}
+   .minabout .abt1 {
+       display: flex; flex-direction: column; width: 550px; margin-left:3rem;
+   }
+     
+   .minabout .abt1 h2 {
+       font-size:75px; font-weight:300;
+   }
+     
+   .minabout .abt1 h3 {
+       letter-spacing: 1px; font-weight: 100; font-size: 25px; margin-bottom:18px;
+   } 
+   .minabout .abt1 h3 span {
+       color: #e645dd;
+   }
+   .minabout .abt1 p {
+       letter-spacing: 1px; line-height:23px;
+       margin-bottom: 18px;
+   }
+     .butn {
+         background-color: #e645dd; border:0px solid transparent;
+         width: fit-content; padding:15px 24px; border-radius:30px; transition: .4s;
+         color: white;
+     }
+     .butn:hover {
+         background-color: transparent; color: white; border:2px solid #e645dd;
+     }
+
+     /* SERVICES SECTION */
+     .services {
+         background-color: #101010; width:100%; color: white;
+         padding:75px 0px;
+     }
+     .services .head1 h1 {
+         text-align:center; font-size:60px; font-weight:300; text-transform:capitalize;
+
+     }
+     .items {
+         display:grid; grid-template-columns:1fr 1fr 1fr; margin-left: 20px;
+         gap:20px;
+        }
+        .items p {
+            margin-bottom:20px;
+        }
+        
+     .item1, .item2, .item3 { display:flex; align-items:center; justify-content:center; 
+        flex-direction: column; line-height:25px;
+        position: relative; height:200px; width:335px;  /* margin:15px; */
+          background-color: #191919;
+        border:0px solid transparent; border-radius:6px;
+        padding:20px 10px; 
+     }
+     /*HIRE ME SECTION */
+     .hire {
+         background-color: #191919; text-align: center; padding:50px 0px;
+         width: 100%;
+     }
+     .getstarted {
+         color: white; text-transform: capitalize; margin-bottom: 20px; font-size:25px;
+     }
+     /* social handles */
+     .social {
+         background-color: #101010; text-align:center; color: white; padding:70px 0px;
+         line-height:20px;
+     }
+     .eemah small {
+         color: rgb(231, 178, 231); 
+     }
+
+
+
+     /*responsive media query css*/
+     @media screen and (max-width:1024px) { 
+       nav {
+           padding:20px 30px;
+       }
+
+         .hero{
+             width: 100%;
+         }
+        .about {
+            padding:7px 0px;
+        }
+      .minabout {
+          display: flex; 
+          flex-direction: column;  justify-content: center;
+          align-items: center; 
+         
+        }
+        .minabout img {
+            width:40vw; height:63vh; 
+            margin:40px 0px 20px 0px;
+              }
+              .minabout .abt1 {
+                  width:400px;
+              }
+ .minabout .abt1 h2 {
+                font-size:50px; font-weight:300;
+            }
+           
+            .services .head1 h1 {
+                font-size: 50px;
+            }
+            .items {
+                display: flex; flex-direction: column;
+                align-items: center; justify-content: center;
+                padding:30px 0px;
+               }
+               .item1, .item2, .item3 {
+                   width:400px; height:220px;
+                     padding:20px 20px; 
+               }
+              
+            }
+            
+        @media screen and (max-width:900px) {
+          .icon-nav {
+                display: block;
+                cursor: pointer;
+            }
+            .icon-nav .line {
+                width:30px; height:3px; 
+                background-color: #ffffff;
+                margin:6px 0px;
+            }
+            .logo {
+                padding-right:150px;
+            }
+           
+            .nav-bar {
+                height:0;
+                position: absolute;
+                top:80px; left: 0; right: 0;
+                width:100vw;
+                background-color: #191919;
+                transition: 0.2s;
+                z-index: 3;
+                overflow: hidden;
+                display: none;
+                
+            }
+            .active {
+                height: 400px; 
+                display: block;
+            } 
+            .nav-bar ul  {
+                display: flex; flex-direction: column;
+              text-align: center;
+              margin:40px auto 0 auto;
+              opacity: 0;
+                
+            }
+            .nav-bar ul li  {
+                margin-bottom: 20px;
+            }
+            .active ul  {
+                opacity: 1;
+            } 
+        }
